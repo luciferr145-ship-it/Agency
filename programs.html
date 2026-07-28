@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Programs & Coaches — Baseline Tennis Club</title>
+<meta name="description" content="Junior development, performance squads, adult clinics, and private coaching at Baseline.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script type="importmap">
+{ "imports": { "lenis": "https://cdn.jsdelivr.net/npm/lenis@1.1.18/+esm" } }
+</script>
+</head>
+<body>
+
+<div class="menu-overlay">
+  <div class="backdrop"></div>
+  <div class="menu-panel">
+    <div class="menu-inner">
+      <div class="menu-top">
+        <div class="brand" style="flex:none;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M4.8 5.6A9 9 0 0 0 4.8 18.4"/><path d="M19.2 5.6a9 9 0 0 1 0 12.8"/></svg>
+          Baseline
+        </div>
+        <button class="menu-close" data-close-menu aria-label="Close menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <nav class="menu-nav">
+        <a href="programs.html" data-nav-link>Programs</a>
+        <a href="facilities.html" data-nav-link>Facilities</a>
+        <a href="testimonials.html" data-nav-link>Reviews</a>
+        <a href="contact.html" data-nav-link>Contact</a>
+      </nav>
+      <div class="menu-bottom">
+        <a class="pill-btn light" href="contact.html">
+          Book a Visit
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <nav class="menu-social">
+          <a href="#instagram">Instagram</a><a href="#x">X</a><a href="#youtube">YouTube</a><a href="#linkedin">LinkedIn</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section class="page-hero">
+    <header class="site-header on-dark" style="padding:0;">
+      <nav class="nav-left">
+        <a href="programs.html" class="current-page">Programs & Coaches</a>
+        <a href="facilities.html">Club & Events</a>
+      </nav>
+      <div class="brand">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M4.8 5.6A9 9 0 0 0 4.8 18.4"/><path d="M19.2 5.6a9 9 0 0 1 0 12.8"/></svg>
+        Baseline
+      </div>
+      <div class="nav-right">
+        <a class="book-visit-link" href="contact.html">Book a Visit</a>
+        <button class="burger" data-open-menu aria-label="Open menu">
+          <span class="bars"><span></span><span></span></span>
+        </button>
+      </div>
+    </header>
+    <div class="eyebrow light">Training programs</div>
+    <h1 data-stack>
+      <span class="stack-line">Built for</span><br>
+      <span class="stack-line">every level</span>
+    </h1>
+    <p>From first serve to nationally ranked competition — four paths, one standard of coaching.</p>
+  </section>
+
+  <section class="programs">
+    <ul class="program-list">
+      <li id="junior"><a class="program-row" href="contact.html">
+        <span class="p-index">01</span>
+        <span class="p-body"><h3>Junior Development</h3><p>Fundamentals, footwork, and match play for ages 6–14.</p></span>
+        <span class="p-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a></li>
+      <li id="performance"><a class="program-row" href="contact.html">
+        <span class="p-index">02</span>
+        <span class="p-body"><h3>Performance Squad</h3><p>High-volume training for competitive and ranked players.</p></span>
+        <span class="p-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a></li>
+      <li id="adult"><a class="program-row" href="contact.html">
+        <span class="p-index">03</span>
+        <span class="p-body"><h3>Adult Clinics</h3><p>Small-group sessions to sharpen technique and fitness.</p></span>
+        <span class="p-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a></li>
+      <li id="private"><a class="program-row" href="contact.html">
+        <span class="p-index">04</span>
+        <span class="p-body"><h3>Private Coaching</h3><p>One-to-one sessions tailored to your goals and schedule.</p></span>
+        <span class="p-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a></li>
+    </ul>
+  </section>
+
+  <section class="explore">
+    <div class="eyebrow dark">Keep exploring</div>
+    <h2 style="margin-top:1rem; font-size:3rem; font-weight:500; line-height:.95; letter-spacing:-0.01em;">Where next?</h2>
+    <div class="explore-grid">
+      <a class="explore-card inview" href="facilities.html">
+        <h3>Club & Facilities</h3>
+        <p>Tour our world-class clay and hard courts.</p>
+        <span class="go">Tour the courts <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="explore-card inview" data-delay="90" href="testimonials.html">
+        <h3>Player Reviews</h3>
+        <p>Hear from the members and parents who trained here.</p>
+        <span class="go">Read reviews <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="explore-card inview" data-delay="180" href="contact.html">
+        <h3>Book a Visit</h3>
+        <p>Come meet the coaches and see the courts for yourself.</p>
+        <span class="go">Get in touch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+    </div>
+  </section>
+
+  <footer class="site-footer" id="contact">
+    <div class="footer-cta">
+      <div>
+        <div class="eyebrow light">Get started</div>
+        <p data-stack>
+          <span class="stack-line">Ready to</span><br>
+          <span class="stack-line">play?</span>
+        </p>
+      </div>
+      <a class="pill-btn light inview" data-delay="150" href="contact.html">
+        Book a Visit
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+
+    <div class="footer-cols">
+      <div class="footer-brand">
+        <div class="brand">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M4.8 5.6A9 9 0 0 0 4.8 18.4"/><path d="M19.2 5.6a9 9 0 0 1 0 12.8"/></svg>
+          Baseline
+        </div>
+        <p>A members' tennis club and academy where focused coaching meets championship courts.</p>
+        <address>
+          <a href="mailto:play@baseline.club">play@baseline.club</a>
+          <a href="tel:+12125550148">+1 (212) 555-0148</a>
+          <span class="muted">120 Court Lane, New York</span>
+        </address>
+      </div>
+      <nav class="footer-nav">
+        <h4>Programs</h4>
+        <ul>
+          <li><a href="programs.html#junior">Junior Development</a></li>
+          <li><a href="programs.html#performance">Performance Squad</a></li>
+          <li><a href="programs.html#adult">Adult Clinics</a></li>
+          <li><a href="programs.html#private">Private Coaching</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-nav">
+        <h4>Club</h4>
+        <ul>
+          <li><a href="contact.html">Membership</a></li>
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="facilities.html">Events</a></li>
+          <li><a href="contact.html">Pro Shop</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-nav">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="programs.html">Coaches</a></li>
+          <li><a href="contact.html">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Baseline Tennis Club. All rights reserved.</span>
+      <nav><a href="#instagram">Instagram</a><a href="#x">X</a><a href="#youtube">YouTube</a><a href="#linkedin">LinkedIn</a></nav>
+      <nav><a href="#privacy">Privacy</a><a href="#terms">Terms</a></nav>
+    </div>
+  </footer>
+</main>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
