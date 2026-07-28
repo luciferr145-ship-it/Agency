@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — Helm & Co.</title>
+<meta name="description" content="Notes on brand strategy and social media from Helm & Co.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/motion.css">
+</head>
+<body>
+
+
+<div class="curtain" aria-hidden="true">
+  <svg class="curtain-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="20" cy="20" r="18" stroke="#EAE6DC" stroke-width="2"/>
+    <path d="M20 8 A12 12 0 0 1 30 26" stroke="#D9A441" stroke-width="2" stroke-linecap="round"/>
+    <line x1="20" y1="20" x2="27" y2="13" stroke="#2F6F6E" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="20" cy="20" r="2.5" fill="#EAE6DC"/>
+  </svg>
+</div>
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#1C2331" stroke-width="2"/>
+        <path d="M20 8 A12 12 0 0 1 30 26" stroke="#D9A441" stroke-width="2" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="27" y2="13" stroke="#2F6F6E" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="2.5" fill="#1C2331"/>
+      </svg>
+      Helm&nbsp;&amp;&nbsp;Co.
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="blog.html" aria-current="page">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions"><a href="contact.html" class="btn btn-primary nav-cta">Book a call</a></div>
+  </nav>
+</header>
+
+<main>
+  <section class="page-header">
+    <div class="container">
+      <span class="breadcrumb">Blog</span>
+      <h1>Notes from the studio.</h1>
+      <p class="lede">Short, practical writing on brand strategy and social media — the same things we cover in coaching calls, in article form.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container blog-grid">
+      <a class="blog-card" href="blog-post-1.html">
+        <svg class="blog-thumb" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="250" fill="#DBD4C3"/>
+          <path d="M20 170 A110 110 0 0 1 240 170" stroke="#2F6F6E" stroke-width="16" fill="none" stroke-linecap="round" transform="translate(70,10)"/>
+        </svg>
+        <div class="blog-body">
+          <div class="blog-meta">Strategy · 6 min read</div>
+          <h3>Why "post more" is the wrong advice</h3>
+          <p>Consistency gets blamed for a problem that's usually about clarity, not frequency.</p>
+          <span class="blog-read">Read the article →</span>
+        </div>
+      </a>
+
+      <a class="blog-card" href="blog-post-2.html">
+        <svg class="blog-thumb" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="250" fill="#DBD4C3"/>
+          <rect x="130" y="60" width="140" height="130" fill="#D9A441" opacity="0.85"/>
+        </svg>
+        <div class="blog-body">
+          <div class="blog-meta">Systems · 5 min read</div>
+          <h3>The content calendar template we hand every client</h3>
+          <p>A simple structure that survives busy weeks, borrowed straight from our coaching sessions.</p>
+          <span class="blog-read">Read the article →</span>
+        </div>
+      </a>
+
+      <a class="blog-card" href="blog-post-3.html">
+        <svg class="blog-thumb" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="250" fill="#DBD4C3"/>
+          <circle cx="200" cy="125" r="60" fill="#1C2331" opacity="0.85"/>
+        </svg>
+        <div class="blog-body">
+          <div class="blog-meta">Brand Voice · 4 min read</div>
+          <h3>How to sound like yourself online</h3>
+          <p>A short exercise for finding the three words your brand should never sound like.</p>
+          <span class="blog-read">Read the article →</span>
+        </div>
+      </a>
+
+      <a class="blog-card" href="blog.html" aria-disabled="true">
+        <svg class="blog-thumb" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="250" fill="#DBD4C3"/>
+          <path d="M40 210 Q200 40 360 210" fill="none" stroke="#2F6F6E" stroke-width="8"/>
+        </svg>
+        <div class="blog-body">
+          <div class="blog-meta">Coaching · Coming soon</div>
+          <h3>What a good monthly check-in actually covers</h3>
+          <p>The three questions we ask in every coaching call, and why they rarely change.</p>
+          <span class="blog-read">More soon</span>
+        </div>
+      </a>
+
+      <a class="blog-card" href="blog.html" aria-disabled="true">
+        <svg class="blog-thumb" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="250" fill="#DBD4C3"/>
+          <rect x="40" y="40" width="320" height="170" fill="none" stroke="#1C2331" stroke-width="3"/>
+        </svg>
+        <div class="blog-body">
+          <div class="blog-meta">Strategy · Coming soon</div>
+          <h3>Auditing your own socials in one afternoon</h3>
+          <p>A step-by-step version of the audit we run for Starter clients.</p>
+          <span class="blog-read">More soon</span>
+        </div>
+      </a>
+
+      <a class="blog-card" href="blog.html" aria-disabled="true">
+        <svg class="blog-thumb" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="250" fill="#DBD4C3"/>
+          <circle cx="90" cy="180" r="80" fill="#D9A441" opacity="0.6"/>
+        </svg>
+        <div class="blog-body">
+          <div class="blog-meta">Campaigns · Coming soon</div>
+          <h3>Planning a launch without losing the plot</h3>
+          <p>How we scope an eight-week campaign before a single post goes out.</p>
+          <span class="blog-read">More soon</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="cta-band">
+        <div>
+          <h2>Want notes like these in your inbox?</h2>
+          <p>One short email a month — no daily noise.</p>
+        </div>
+        <form style="display:flex; gap:0.8rem; flex-wrap:wrap;">
+          <input type="email" required placeholder="you@business.com" aria-label="Email address" style="padding:0.9em 1.1em; border-radius:4px; border:1px solid rgba(255,255,255,0.3); background:rgba(255,255,255,0.08); color:#fff; min-width:220px;">
+          <button type="submit" class="btn btn-gold">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand" style="color: var(--stone); margin-bottom: 1rem;">
+        <svg class="brand-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="18" stroke="#EAE6DC" stroke-width="2"/>
+          <path d="M20 8 A12 12 0 0 1 30 26" stroke="#D9A441" stroke-width="2" stroke-linecap="round"/>
+          <line x1="20" y1="20" x2="27" y2="13" stroke="#2F6F6E" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="20" cy="20" r="2.5" fill="#EAE6DC"/>
+        </svg>
+        Helm &amp; Co.
+      </div>
+      <p>Brand and social strategy for owners who'd rather learn the wheel than hand it over for good.</p>
+      <div class="social-row">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="LinkedIn">IN</a>
+        <a href="#" aria-label="Facebook">FB</a>
+      </div>
+    </div>
+    <div>
+      <h4>Site</h4>
+      <ul class="footer-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <ul class="footer-links">
+        <li><a href="services.html">Brand Strategy</a></li>
+        <li><a href="services.html">Monthly Coaching</a></li>
+        <li><a href="services.html">Content Systems</a></li>
+        <li><a href="services.html">Workshops</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul class="footer-links">
+        <li><a href="mailto:hello@helmandco.example">hello@helmandco.example</a></li>
+        <li><a href="tel:+61400000000">+61 400 000 000</a></li>
+        <li><a href="https://wa.me/61400000000" target="_blank" rel="noopener">WhatsApp us</a></li>
+        <li>Gold Coast, QLD, Australia</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© <span id="year"></span> Helm &amp; Co. All rights reserved.</span>
+    <span>Template design — customise freely.</span>
+  </div>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/61400000000?text=Hi%20Helm%20%26%20Co.%2C%20I%27d%20like%20to%20chat%20about%20my%20marketing." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16.02 2.67C8.6 2.67 2.6 8.66 2.6 16.07c0 2.44.65 4.72 1.78 6.7L2.67 29.3l6.7-1.67a13.4 13.4 0 006.65 1.76c7.43 0 13.42-6 13.42-13.4S23.45 2.67 16.02 2.67zm0 24.2c-2.1 0-4.05-.58-5.73-1.6l-.41-.24-4 1 1.07-3.87-.27-.4a10.9 10.9 0 01-1.7-5.7c0-6.05 4.93-10.98 11.04-10.98 6.1 0 11.03 4.93 11.03 10.98 0 6.06-4.93 10.99-11.03 10.99zm6.03-8.23c-.33-.17-1.95-.96-2.25-1.07-.3-.11-.52-.17-.74.17-.22.33-.85 1.07-1.04 1.29-.19.22-.38.24-.71.08-.33-.17-1.4-.51-2.66-1.63-.98-.87-1.65-1.95-1.84-2.28-.19-.33-.02-.5.15-.67.15-.15.33-.38.5-.57.17-.19.22-.33.33-.55.11-.22.06-.41-.03-.58-.08-.17-.74-1.77-1.01-2.42-.27-.64-.54-.55-.74-.56h-.63c-.22 0-.58.08-.88.41-.3.33-1.15 1.12-1.15 2.73 0 1.6 1.18 3.16 1.34 3.38.17.22 2.32 3.55 5.63 4.98.79.34 1.4.55 1.88.7.79.25 1.51.21 2.08.13.63-.1 1.95-.8 2.23-1.57.27-.77.27-1.43.19-1.57-.08-.14-.3-.22-.63-.38z"/></svg>
+  <span class="wa-text">Chat with us</span>
+</a>
+
+<script src="js/script.js"></script>
+<script src="js/motion.js"></script>
+</body>
+</html>
