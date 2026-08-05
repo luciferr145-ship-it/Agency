@@ -1,429 +1,200 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Baseline — Tennis Club & Academy</title>
-<meta name="description" content="A members' tennis club and academy where focused coaching meets championship courts.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-<script type="importmap">
-{ "imports": { "lenis": "https://cdn.jsdelivr.net/npm/lenis@1.1.18/+esm" } }
-</script>
+<meta charset="UTF-8">
+<script>document.documentElement.classList.add('js');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sable Studio — Strategy-Led Branding &amp; Web Design</title>
+<meta name="description" content="Sable Studio is a boutique branding and web design studio building strategy-led identities and websites for ambitious, independent brands.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27%3E%3Crect width=%2724%27 height=%2724%27 rx=%276%27 fill=%27%23b85c38%27/%3E%3Ctext x=%2712%27 y=%2717%27 font-family=%27Georgia,serif%27 font-weight=%27600%27 font-size=%2714%27 fill=%27%23faf6f0%27 text-anchor=%27middle%27%3ES%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 
-<!-- loader -->
-<div class="loader" id="loader">
-  <div class="loader-mark" id="loaderMark">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M4.8 5.6A9 9 0 0 0 4.8 18.4"/><path d="M19.2 5.6a9 9 0 0 1 0 12.8"/></svg>
-    Baseline
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="index.html">Sable<span>.</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="studio.html">Studio</a>
+      <a href="services.html">Services</a>
+      <a href="work.html">Work</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="btn btn-primary nav-cta" href="contact.html">Book a strategy call</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg>
+    </button>
   </div>
-  <div class="loader-track"><div class="loader-fill" id="loaderFill"></div></div>
-</div>
+  <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile">
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="studio.html">Studio</a>
+    <a href="services.html">Services</a>
+    <a href="work.html">Work</a>
+    <a href="contact.html">Contact</a>
+    <a class="btn btn-primary mt-2" href="contact.html">Book a strategy call</a>
+  </nav>
+</header>
 
-<!-- fullscreen menu -->
-<div class="menu-overlay">
-  <div class="backdrop"></div>
-  <div class="menu-panel">
-    <div class="menu-inner">
-      <div class="menu-top">
-        <div class="brand" style="flex:none;">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M4.8 5.6A9 9 0 0 0 4.8 18.4"/><path d="M19.2 5.6a9 9 0 0 1 0 12.8"/></svg>
-          Baseline
-        </div>
-        <button class="menu-close" data-close-menu aria-label="Close menu">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
-        </button>
-      </div>
-      <nav class="menu-nav">
-        <a href="programs.html" data-nav-link>Programs</a>
-        <a href="facilities.html" data-nav-link>Facilities</a>
-        <a href="testimonials.html" data-nav-link>Reviews</a>
-        <a href="contact.html" data-nav-link>Contact</a>
-      </nav>
-      <div class="menu-bottom">
-        <a class="pill-btn light" href="contact.html">
-          Book a Visit
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <nav class="menu-social">
-          <a href="#instagram">Instagram</a><a href="#x">X</a><a href="#youtube">YouTube</a><a href="#linkedin">LinkedIn</a>
-        </nav>
-      </div>
-    </div>
-  </div>
-</div>
+<main id="main">
 
-<main>
-  <!-- HERO -->
   <section class="hero">
-    <div class="hero-plate">
-      <div class="layer" id="parallaxLayer">
-        <img src="https://api.getlayers.ai/storage/v1/object/public/public/assets/baseline-88535e4000/hero/hero-court.webp" alt="Player lunging for a shot on a hard court" fetchpriority="high">
-      </div>
-      <div class="overlay"></div>
+    <div class="blob-field" aria-hidden="true">
+      <div class="blob blob-a"></div>
+      <div class="blob blob-b"></div>
     </div>
-
-    <header class="site-header on-dark">
-      <nav class="nav-left">
-        <a href="programs.html">Programs & Coaches</a>
-        <a href="facilities.html">Club & Events</a>
-      </nav>
-      <div class="brand">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M4.8 5.6A9 9 0 0 0 4.8 18.4"/><path d="M19.2 5.6a9 9 0 0 1 0 12.8"/></svg>
-        Baseline
-      </div>
-      <div class="nav-right">
-        <a class="book-visit-link" href="contact.html">Book a Visit</a>
-        <button class="burger" data-open-menu aria-label="Open menu">
-          <span class="bars"><span></span><span></span></span>
-        </button>
-      </div>
-    </header>
-
-    <div class="hero-title-wrap">
-      <h1 class="hero-title" id="heroTitle">
-        <span class="clip"><span>Own The Court</span></span>
-      </h1>
-    </div>
-
-    <div class="hero-bottom">
-      <p class="hero-tagline" id="heroTagline">
-        <span class="clip"><span>Show Up,</span></span>
-        <span class="clip"><span>Level Up</span></span>
-      </p>
-
-      <div class="hero-cluster">
-        <div class="collection-slider glass-card inview" id="collectionSlider" data-delay="650" style="padding:0.75rem; background:transparent; border:none; box-shadow:none; backdrop-filter:none;">
-          <div class="collection-card glass-card" id="collectionCard">
-            <img id="collImg" src="https://api.getlayers.ai/storage/v1/object/public/public/assets/baseline-88535e4000/2.webp" alt="Player driving a backhand on a hard court" loading="lazy">
-            <div class="meta">
-              <div class="cbrand" id="collBrand">Baseline Pro</div>
-              <div class="ctitle" id="collTitle">Featured Gear</div>
-              <a class="ccta" href="#" id="collCta">Shop the kit →</a>
-            </div>
-          </div>
-          <div class="dots light" id="collDots"></div>
-        </div>
-
-        <article class="membership-card glass-card inview" data-delay="780">
-          <div class="membership-left">
-            <div class="membership-value">9K+</div>
-            <div class="membership-dots">
-              <span style="background:#5790e6"></span>
-              <span style="background:#c2e029"></span>
-              <span style="background:#0b6e97"></span>
-              <span style="background:#ffffff"></span>
-            </div>
-            <div class="membership-caption">Members on court</div>
-          </div>
-          <div class="membership-img">
-            <img src="https://api.getlayers.ai/storage/v1/object/public/public/assets/baseline-88535e4000/1.webp" alt="Player waiting to return on a clay court" loading="lazy">
-          </div>
-        </article>
+    <div class="container">
+      <p class="eyebrow">Boutique Branding &amp; Web Design Studio</p>
+      <h1 data-split-words>Strategy-led design that earns its keep.</h1>
+      <p class="hero-sub">Sable is a small studio for independent brands who want their identity and website working as one connected system — not three disconnected vendors.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary magnetic" href="contact.html">Book a strategy call</a>
+        <a class="btn btn-ghost" href="work.html">See the work</a>
       </div>
     </div>
   </section>
 
-  <!-- TRUST -->
-  <section class="trust">
-    <div class="trust-top">
-      <div class="percent-badge inview scale">
-        <b>100%</b>
-        <span>Coaching built around your game</span>
-      </div>
-      <article class="badge-card inview" data-delay="120">
-        <div class="badge-chip">#01</div>
+  <section class="statement">
+    <div class="container" data-reveal>
+      <p class="eyebrow">How We Think</p>
+      <h2>Strategy, design, and development — working <em>as one</em>, not in silos.</h2>
+    </div>
+  </section>
+
+  <section class="tight">
+    <div class="container">
+      <div class="section-head" data-reveal>
         <div>
-          <h3>Trusted by serious players</h3>
-          <p>From first-timers to nationally ranked juniors, players train here because the progress shows up on the scoreboard.</p>
+          <p class="eyebrow">What We Do</p>
+          <h2>Four disciplines, one studio</h2>
         </div>
-      </article>
-    </div>
-
-    <h2 class="ghost-heading" id="ghostHeading">
-      <div class="ghost-row">
-        <span class="ghost-word clip" data-delay="0"><span></span></span>
-        <span class="ghost-word clip" data-delay="60"><span></span></span>
+        <a class="btn btn-ghost" href="services.html">All services →</a>
       </div>
-      <div class="ghost-row">
-        <span class="ghost-word ink clip" data-delay="120"><span></span></span>
-        <span class="ghost-word clip" data-delay="180"><span></span></span>
-      </div>
-    </h2>
-
-    <div class="coach-wrap">
-      <figure class="coach-card inview scale" data-delay="0">
-        <div class="coach-figure" id="coachFigure"></div>
-        <div class="coach-caption">
-          <div class="name" id="coachName">Marco Vidal</div>
-          <div class="role" id="coachRole">Head Coach</div>
+      <div class="grid grid-4 reveal-group">
+        <div class="service-card">
+          <span class="service-index">01</span>
+          <h3>Brand Strategy &amp; Identity</h3>
+          <p>Positioning and visual systems built on research, not guesswork.</p>
         </div>
-      </figure>
-    </div>
-
-    <div class="trust-controls">
-      <button class="arrow-btn outline prev" id="trustPrev" aria-label="Previous coach">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </button>
-      <div class="dots" id="trustDots"></div>
-      <button class="arrow-btn solid" id="trustNext" aria-label="Next coach">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </button>
+        <div class="service-card">
+          <span class="service-index">02</span>
+          <h3>Design</h3>
+          <p>Collateral, packaging, and print that carries the brand consistently.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-index">03</span>
+          <h3>Marketing</h3>
+          <p>Messaging and campaigns that give the brand a reason to be seen.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-index">04</span>
+          <h3>Web Design &amp; Dev</h3>
+          <p>Fast, accessible websites built to convert, not just look good.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- EXPLORE / links to other pages -->
-  <section class="explore">
-    <div class="eyebrow dark">Find your way in</div>
-    <h2 style="margin-top:1rem; font-size:3rem; font-weight:500; line-height:.95; letter-spacing:-0.01em;">Explore the club</h2>
-    <div class="explore-grid">
-      <a class="explore-card inview" href="programs.html" data-delay="0">
-        <h3>Programs & Coaches</h3>
-        <p>Junior development, performance squads, adult clinics, and private coaching — built for every level.</p>
-        <span class="go">View programs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      </a>
-      <a class="explore-card inview" href="facilities.html" data-delay="90">
-        <h3>Club & Facilities</h3>
-        <p>Tour our world-class clay and hard courts, tuned for training and match-ready play.</p>
-        <span class="go">Tour the courts <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      </a>
-      <a class="explore-card inview" href="testimonials.html" data-delay="180">
-        <h3>Player Reviews</h3>
-        <p>Hear from the members and parents who trained here — and what changed on the scoreboard.</p>
-        <span class="go">Read reviews <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      </a>
-    </div>
-  </section>
-
-  <!-- STATS -->
-  <section class="stats">
-    <div class="eyebrow light">By the numbers</div>
-    <h2 data-stack>
-      <span class="stack-line">A club that</span><br>
-      <span class="stack-line">keeps score</span>
-    </h2>
-    <dl class="stats-grid">
-      <div class="stat-cell inview" data-delay="0">
-        <dt class="sr-only">Certified coaches</dt>
-        <dd><div class="value">24</div><div class="label">Certified coaches</div></dd>
-      </div>
-      <div class="stat-cell inview" data-delay="110">
-        <dt class="sr-only">Championship courts</dt>
-        <dd><div class="value">12</div><div class="label">Championship courts</div></dd>
-      </div>
-      <div class="stat-cell inview" data-delay="220">
-        <dt class="sr-only">Members training</dt>
-        <dd><div class="value">9K+</div><div class="label">Members training</div></dd>
-      </div>
-      <div class="stat-cell inview" data-delay="330">
-        <dt class="sr-only">Years on the baseline</dt>
-        <dd><div class="value">15</div><div class="label">Years on the baseline</div></dd>
-      </div>
-    </dl>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="site-footer" id="contact">
-    <div class="footer-cta">
-      <div>
-        <div class="eyebrow light">Get started</div>
-        <p data-stack>
-          <span class="stack-line">Ready to</span><br>
-          <span class="stack-line">play?</span>
-        </p>
-      </div>
-      <a class="pill-btn light inview" data-delay="150" href="contact.html">
-        Book a Visit
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-    </div>
-
-    <div class="footer-cols">
-      <div class="footer-brand">
-        <div class="brand">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M4.8 5.6A9 9 0 0 0 4.8 18.4"/><path d="M19.2 5.6a9 9 0 0 1 0 12.8"/></svg>
-          Baseline
+  <section class="bg-muted">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="eyebrow">Recent Work</p>
+          <h2>A brand you'll recognise later</h2>
         </div>
-        <p>A members' tennis club and academy where focused coaching meets championship courts.</p>
-        <address>
-          <a href="mailto:play@baseline.club">play@baseline.club</a>
-          <a href="tel:+12125550148">+1 (212) 555-0148</a>
-          <span class="muted">120 Court Lane, New York</span>
-        </address>
+        <a class="btn btn-ghost" href="work.html">All projects →</a>
       </div>
-      <nav class="footer-nav">
-        <h4>Programs</h4>
-        <ul>
-          <li><a href="programs.html#junior">Junior Development</a></li>
-          <li><a href="programs.html#performance">Performance Squad</a></li>
-          <li><a href="programs.html#adult">Adult Clinics</a></li>
-          <li><a href="programs.html#private">Private Coaching</a></li>
-        </ul>
-      </nav>
-      <nav class="footer-nav">
-        <h4>Club</h4>
-        <ul>
-          <li><a href="contact.html">Membership</a></li>
-          <li><a href="facilities.html">Facilities</a></li>
-          <li><a href="facilities.html">Events</a></li>
-          <li><a href="contact.html">Pro Shop</a></li>
-        </ul>
-      </nav>
-      <nav class="footer-nav">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="index.html">About</a></li>
-          <li><a href="programs.html">Coaches</a></li>
-          <li><a href="contact.html">Careers</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="grid grid-3 reveal-group">
+        <a class="work-card" href="work.html">
+          <div class="work-thumb grad-1"><span class="tag">Branding — Hospitality</span></div>
+          <div class="work-meta"><h3>Harbor &amp; Vine</h3><p>Identity, signage, menus</p></div>
+        </a>
+        <a class="work-card" href="work.html">
+          <div class="work-thumb grad-2"><span class="tag">Branding — Homeware</span></div>
+          <div class="work-meta"><h3>Loam Ceramics</h3><p>Naming, identity, packaging</p></div>
+        </a>
+        <a class="work-card" href="work.html">
+          <div class="work-thumb grad-3"><span class="tag">Web — Professional Services</span></div>
+          <div class="work-meta"><h3>Fenwick &amp; Rye</h3><p>Website, brand refresh</p></div>
+        </a>
+      </div>
     </div>
+  </section>
 
-    <div class="footer-bottom">
-      <span>© 2026 Baseline Tennis Club. All rights reserved.</span>
-      <nav><a href="#instagram">Instagram</a><a href="#x">X</a><a href="#youtube">YouTube</a><a href="#linkedin">LinkedIn</a></nav>
-      <nav><a href="#privacy">Privacy</a><a href="#terms">Terms</a></nav>
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Harbor &amp; Vine</span><span>Loam Ceramics</span><span>Fenwick &amp; Rye</span><span>Kestrel Coffee</span><span>Meridian</span><span>Salthouse</span>
+      <span>Harbor &amp; Vine</span><span>Loam Ceramics</span><span>Fenwick &amp; Rye</span><span>Kestrel Coffee</span><span>Meridian</span><span>Salthouse</span>
     </div>
-  </footer>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="stat-row reveal-group">
+        <div class="stat"><h2 data-count-to="8">0</h2><p>Years in practice</p></div>
+        <div class="stat"><h2 data-count-to="50" data-count-suffix="+">0</h2><p>Brands built</p></div>
+        <div class="stat"><h2 data-count-to="7">0</h2><p>Industries served</p></div>
+        <div class="stat"><h2 data-count-to="92" data-count-suffix="%">0</h2><p>Client referral rate</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-inverse cta-band">
+    <div class="container" data-reveal>
+      <p class="eyebrow">Ready to Start?</p>
+      <h2>Ready to build a brand that matches your ambition?</h2>
+      <p class="muted mt-2" style="margin-inline:auto;">Book a complimentary strategy session — no pitch, just a conversation.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary magnetic" href="contact.html">Book a strategy call</a>
+      </div>
+    </div>
+  </section>
+
 </main>
 
-<script type="module">
-import "./js/main.js";
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="logo" href="index.html">Sable<span>.</span></a>
+        <p class="muted mt-2">A boutique branding and web design studio. Remote-first, working worldwide.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="studio.html">Studio</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Brand Strategy &amp; Identity</a></li>
+          <li><a href="services.html">Web Design &amp; Dev</a></li>
+          <li><a href="services.html">Marketing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:hello@sablestudio.example">hello@sablestudio.example</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Sable Studio. All rights reserved.</span>
+      <span>Template demo — replace with your own content.</span>
+    </div>
+  </div>
+</footer>
 
-/* -------- loader -------- */
-const MIN_VISIBLE = 1400, MAX_VISIBLE = 2600, EXIT = 850;
-const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-const loader = document.getElementById("loader");
-const loaderMark = document.getElementById("loaderMark");
-const loaderFill = document.getElementById("loaderFill");
-window.Baseline.lock();
-
-requestAnimationFrame(()=> loaderMark.classList.add("in"));
-requestAnimationFrame(()=> loaderFill.classList.add("fill"));
-
-let ready = false;
-function finishLoad(){
-  if (ready) return;
-  ready = true;
-  window.Baseline.unlock();
-  document.documentElement.classList.remove("lock");
-  loader.classList.add("exit");
-  // fire hero reveals now that loader clears
-  document.querySelectorAll(".hero-title .clip, .hero-tagline .clip, #collectionSlider, .membership-card").forEach(el=>{
-    setTimeout(()=> el.classList.add("in"), 0);
-  });
-  setTimeout(()=> loader.remove(), reduced ? 0 : EXIT);
-}
-function startCountdown(){
-  setTimeout(finishLoad, reduced ? 200 : MIN_VISIBLE);
-}
-if (document.readyState === "complete") startCountdown();
-else window.addEventListener("load", startCountdown);
-setTimeout(finishLoad, reduced ? 200 : MAX_VISIBLE);
-
-/* -------- hero parallax -------- */
-const heroSection = document.querySelector(".hero");
-const layer = document.getElementById("parallaxLayer");
-function parallax(){
-  const rect = heroSection.getBoundingClientRect();
-  const vh = window.innerHeight;
-  const progress = Math.min(1, Math.max(0, (vh - rect.top) / (vh + rect.height)));
-  layer.style.transform = `translateY(${progress*12}%)`;
-  requestAnimationFrame(parallax);
-}
-requestAnimationFrame(parallax);
-
-/* -------- collection slider (hero) -------- */
-const collectionSlides = [
-  { img:"https://api.getlayers.ai/storage/v1/object/public/public/assets/baseline-88535e4000/2.webp", brand:"Baseline Pro", title:"Featured Gear", cta:"Shop the kit", alt:"Player driving a backhand on a hard court" },
-  { img:"https://api.getlayers.ai/storage/v1/object/public/public/assets/baseline-88535e4000/3.webp", brand:"Court Series", title:"Summer Drop", cta:"View the line", alt:"Player stretching for a forehand on clay" },
-  { img:"https://api.getlayers.ai/storage/v1/object/public/public/assets/baseline-88535e4000/5.webp", brand:"Academy Kit", title:"Junior Range", cta:"Browse juniors", alt:"Player set in a ready stance on clay" },
-];
-let collIndex = 0;
-const collImg = document.getElementById("collImg");
-const collBrand = document.getElementById("collBrand");
-const collTitle = document.getElementById("collTitle");
-const collCta = document.getElementById("collCta");
-const collCard = document.getElementById("collectionCard");
-const collDotsWrap = document.getElementById("collDots");
-collectionSlides.forEach((_,i)=>{
-  const btn = document.createElement("button");
-  btn.innerHTML = "<span></span>";
-  btn.setAttribute("aria-current", i===0 ? "true":"false");
-  btn.addEventListener("click", ()=> setCollection(i));
-  collDotsWrap.appendChild(btn);
-});
-function setCollection(i){
-  collIndex = i;
-  collCard.style.transition = "opacity .3s, transform .3s";
-  collCard.style.opacity = 0;
-  collCard.style.transform = "translateY(16px) scale(.96)";
-  setTimeout(()=>{
-    const s = collectionSlides[collIndex];
-    collImg.src = s.img; collImg.alt = s.alt;
-    collBrand.textContent = s.brand;
-    collTitle.textContent = s.title;
-    collCta.textContent = s.cta + " →";
-    collCard.style.opacity = 1;
-    collCard.style.transform = "translateY(0) scale(1)";
-    [...collDotsWrap.children].forEach((d,j)=> d.setAttribute("aria-current", j===collIndex ? "true":"false"));
-  }, 260);
-}
-setInterval(()=> setCollection((collIndex+1) % collectionSlides.length), 3800);
-
-/* -------- trust coach carousel -------- */
-const trustSlides = [
-  { img:"https://api.getlayers.ai/storage/v1/object/public/public/assets/baseline-88535e4000/5.webp", name:"Marco Vidal", role:"Head Coach", alt:"Head coach set in a ready stance on clay", headline:["Expert","Result-","Driven","Coaching"] },
-  { img:"https://api.getlayers.ai/storage/v1/object/public/public/assets/baseline-88535e4000/4.webp", name:"Elena Sokolova", role:"Performance Coach", alt:"Performance coach following through on a serve", headline:["Sharper","Faster","Stronger","Player"] },
-  { img:"https://api.getlayers.ai/storage/v1/object/public/public/assets/baseline-88535e4000/1.webp", name:"James Okoro", role:"Juniors Lead", alt:"Juniors lead waiting to return on clay", headline:["Future","Champions","Start","Here"] },
-];
-let trustIndex = 0;
-const coachFigure = document.getElementById("coachFigure");
-const coachName = document.getElementById("coachName");
-const coachRole = document.getElementById("coachRole");
-const ghostHeading = document.getElementById("ghostHeading");
-const ghostWords = ghostHeading.querySelectorAll(".ghost-word");
-const trustDotsWrap = document.getElementById("trustDots");
-
-trustSlides.forEach((s,i)=>{
-  const img = document.createElement("img");
-  img.src = s.img; img.alt = s.alt; img.loading = "lazy";
-  if (i===0) img.classList.add("active");
-  coachFigure.appendChild(img);
-});
-trustSlides.forEach((_,i)=>{
-  const btn = document.createElement("button");
-  btn.innerHTML = "<span></span>";
-  btn.setAttribute("aria-current", i===0 ? "true":"false");
-  btn.addEventListener("click", ()=> setTrust(i));
-  trustDotsWrap.appendChild(btn);
-});
-
-function renderGhost(){
-  const words = trustSlides[trustIndex].headline;
-  ghostWords.forEach((w,i)=>{
-    w.classList.remove("in");
-    w.querySelector("span").textContent = words[i];
-  });
-  requestAnimationFrame(()=>{
-    ghostWords.forEach((w,i)=> setTimeout(()=> w.classList.add("in"), i*60));
-  });
-}
-function setTrust(i){
-  trustIndex = (i + trustSlides.length) % trustSlides.length;
-  coachName.textContent = trustSlides[trustIndex].name;
-  coachRole.textContent = trustSlides[trustIndex].role;
-  [...coachFigure.querySelectorAll("img")].forEach((img,j)=> img.classList.toggle("active", j===trustIndex));
-  [...trustDotsWrap.children].forEach((d,j)=> d.setAttribute("aria-current", j===trustIndex ? "true":"false"));
-  renderGhost();
-}
-document.getElementById("trustPrev").addEventListener("click", ()=> setTrust(trustIndex-1));
-document.getElementById("trustNext").addEventListener("click", ()=> setTrust(trustIndex+1));
-renderGhost();
-</script>
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/vendor/ScrollTrigger.min.js"></script>
+<script src="assets/main.js"></script>
 </body>
 </html>
